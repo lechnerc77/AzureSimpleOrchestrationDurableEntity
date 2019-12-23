@@ -19,4 +19,7 @@ If you set up the function projetct yourself via Visual Studio Code, make sure t
 ## Deviations from the official documentation (as of 23.12.2019)
 The following mismatch with respect to the current [official documentation](https://docs.microsoft.com/en-US/azure/azure-functions/durable/durable-functions-entities) exists :
 * The extensions are not installed via extension bundle as the extension `entityTrigger` is not recognized (which is consistent with the [extension bundle JSON](https://github.com/Azure/azure-functions-extension-bundles/blob/master/src/Microsoft.Azure.Functions.ExtensionBundle/extensions.json) ), but via `func install`. This is current state of the art as described in the release notes of [version 2.1.0](https://github.com/Azure/azure-functions-durable-extension/releases) 
-* The binding of the EntityClient is an inbound binding as it would be for a OrchestrationClient. The documentation is not consistent here. It is ambivalent if you use in- or outbound binding, but I would stick to the status quo of the orchestration client 
+* The binding of the EntityClient is an inbound binding as it would be for a OrchestrationClient. The documentation is not consistent here. It is ambivalent if you use in- or outbound binding, but I would stick to the status quo of the orchestration client
+
+## Clearing Local Azure Storage Emulator
+If you do local development you might want to purge the history in your local Azure storage emulator. To do so key in the command `AzureStorageEmulator.exe clear all` - and do not forget the `all`, not that taht ever happended to me ;-) 
