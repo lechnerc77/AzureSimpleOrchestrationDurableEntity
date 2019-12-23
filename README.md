@@ -1,7 +1,7 @@
 # Simple Azure Orchestration with Durable Entity
 
 ## Content
-This code repository contains a simple HTTP-triggered Azure durable function with a durable entity serving as a counter. The counter is orchestrated via the durable function.
+This code repository contains a simple HTTP-triggered Azure durable function orchestartor with a durable entity serving as a counter. The counter is triggerd via the durable orchestrator function.
 
 ## Setup
 Make sure that all requirements for local development of durable functions are fulfilled as described in the [official documentation](https://docs.microsoft.com/en-US/azure/azure-functions/durable/quickstart-js-vscode#prerequisites).
