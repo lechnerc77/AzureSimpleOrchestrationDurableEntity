@@ -1,0 +1,5 @@
+### Simple GET call to kick off orchestrator and entity
+GET http://localhost:7071/api/orchestrators/DurableEntityOrchestratorJS
+
+### Retrive the status
+GET http://localhost:7071/runtime/webhooks/durabletask/instances/<PUT YOUR DATA HERE>
